@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archana Kumari — Frontend Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=Space+Mono:wght@400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cf"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <span class="nav-cursive">Archana</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" style="max-width: 100%; padding: 0; margin: 0">
+      <div class="parallax-bg" id="parallaxBg"></div>
+      <div class="parallax-grid" id="parallaxGrid"></div>
+      <div class="parallax-orb orb1" id="orb1"></div>
+      <div class="parallax-orb orb2" id="orb2"></div>
+      <div class="hero-content">
+        <!-- LEFT: text -->
+        <div class="hero-text">
+          <div class="hero-tag" id="heroTag">
+            Frontend Developer · Web · Mobile
+          </div>
+          <h1 class="hero-name" id="heroName">
+            ARCHANA<br /><span>KUMARI</span>
+          </h1>
+          <p class="hero-sub" id="heroSub">
+            Building performant, pixel-perfect interfaces that users love
+          </p>
+          <div class="hero-cta" id="heroCta">
+            <a href="#projects" class="btn-primary">View Work</a>
+            <a href="#contact-section" class="btn-outline">Let's Connect</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: photo placeholder — replace img src with your photo -->
+        <div class="hero-photo" id="heroPhoto">
+          <div class="hero-photo-corner tl"></div>
+          <div class="hero-photo-corner tr"></div>
+          <div class="hero-photo-corner bl"></div>
+          <div class="hero-photo-corner br"></div>
+          <img src="./archana.jpeg" alt="Archana Kumari" />
+          <!-- ✏️ To add your photo, replace the placeholder below with:
+           
+           and remove the .photo-placeholder-icon and .photo-placeholder-text divs -->
+          <!-- <div class="photo-placeholder-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"
+              />
+            </svg>
+          </div> -->
+          <div class="photo-placeholder-text">Your Photo<br />Here</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About Me</div>
+      <div class="section-title">WHO I AM</div>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>
+            I'm a <strong>Software Developer</strong> with 2+ years of
+            experience building scalable, high-performance web and mobile
+            applications. I combine strong
+            <strong>computer science fundamentals</strong> with modern frontend
+            expertise.
+          </p>
+          <p>
+            From real-time WebSocket integrations to cross-platform React Native
+            apps — I focus on clean, maintainable code that delivers real
+            business value. I thrive in collaborative environments where design
+            meets engineering.
+          </p>
+          <p>
+            Currently expanding into
+            <strong>backend development & databases</strong> to become a more
+            complete, full-stack engineer.
+          </p>
+        </div>
+        <div class="about-stats fade-up">
+          <div class="stat-box">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">180+</div>
+            <div class="stat-label">LeetCode Problems Solved</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">25%</div>
+            <div class="stat-label">Performance Improvement</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">8.25</div>
+            <div class="stat-label">B.Tech CGPA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-label">Tech Stack</div>
+      <div class="section-title">SKILLS</div>
+      <div class="skills-wrapper">
+        <div class="skill-category fade-up">
+          <div class="skill-category-title">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span
+            ><span class="skill-tag">JavaScript</span
+            ><span class="skill-tag">TypeScript</span
+            ><span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-category-title">Frontend Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span
+            ><span class="skill-tag">React Native</span
+            ><span class="skill-tag">Next.js</span
+            ><span class="skill-tag">Redux</span
+            ><span class="skill-tag">Redux Toolkit</span
+            ><span class="skill-tag">MobX</span
+            ><span class="skill-tag">Tailwind CSS</span
+            ><span class="skill-tag">Webpack</span
+            ><span class="skill-tag">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-category-title">Backend & APIs</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span
+            ><span class="skill-tag">Express.js</span
+            ><span class="skill-tag">REST APIs</span
+            ><span class="skill-tag">WebSocket</span
+            ><span class="skill-tag">JWT</span
+            ><span class="skill-tag">MongoDB</span
+            ><span class="skill-tag">Axios</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-category-title">Tools & Testing</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Playwright</span
+            ><span class="skill-tag">Postman</span
+            ><span class="skill-tag">Git</span
+            ><span class="skill-tag">JIRA</span
+            ><span class="skill-tag">Jenkins</span
+            ><span class="skill-tag">Chrome DevTools</span
+            ><span class="skill-tag">Lighthouse</span>
+          </div>
+        </div>
+        <div
+          class="skill-category fade-up"
+          style="border-color: rgba(221, 254, 82, 0.26)"
+        >
+          <div class="learning-badge">⚡ Currently Learning</div>
+          <div class="skill-category-title" style="margin-top: 0.35rem">
+            Backend & Databases
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag learning">SQL / PostgreSQL</span
+            ><span class="skill-tag learning">Database Design</span
+            ><span class="skill-tag learning">REST API Design</span
+            ><span class="skill-tag learning">System Design</span
+            ><span class="skill-tag learning">Docker (basics)</span>
+          </div>
+          <p
+            style="
+              font-size: 0.74rem;
+              color: var(--mid-gray);
+              margin-top: 0.9rem;
+              font-style: italic;
+            "
+          >
+            Expanding toward full-stack engineering
+          </p>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-category-title">Core CS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures & Algorithms</span
+            ><span class="skill-tag">OOP</span
+            ><span class="skill-tag">Databases</span
+            ><span class="skill-tag">Performance Optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" style="padding-bottom: 0">
+      <div class="section-label">Work History</div>
+      <div class="section-title">EXPERIENCE</div>
+      <div class="experience-stack">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">
+                Software Developer <span class="exp-badge">Current</span>
+              </div>
+              <div class="exp-company">
+                Adcuratio Media Inc. · Bengaluru, India
+              </div>
+            </div>
+            <div class="exp-period">May 2024 — Present</div>
+          </div>
+          <ul class="exp-points">
+            <li>
+              Owned and developed login & signup authentication flows across
+              multiple projects, integrating third-party services and robust
+              frontend validations.
+            </li>
+            <li>
+              Improved web application performance by <strong>25%</strong> using
+              Chrome DevTools and Lighthouse via code splitting, lazy loading,
+              and asset optimization.
+            </li>
+            <li>
+              Designed and built a scalable multi-user web portal with dynamic
+              feeds, filtering, pagination, and efficient state management.
+            </li>
+            <li>
+              Implemented real-time price updates using WebSockets, handling
+              live data streams and client-side state synchronization.
+            </li>
+            <li>
+              Delivered a cross-platform mobile app with cart and user profile
+              features using React Native, ensuring consistent UX.
+            </li>
+            <li>
+              Collaborated with designers, backend engineers, and QA teams to
+              ship scalable, maintainable solutions.
+            </li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Software Developer Intern</div>
+              <div class="exp-company">
+                Adcuratio Media Inc. · Bengaluru, India
+              </div>
+            </div>
+            <div class="exp-period">Jan 2024 — Apr 2024</div>
+          </div>
+          <ul class="exp-points">
+            <li>
+              Analyzed and contributed to an existing production codebase,
+              refactoring components using DRY principles.
+            </li>
+            <li>
+              Implemented UI enhancements and reusable components, improving
+              usability and visual consistency.
+            </li>
+            <li>
+              Added scroll-based animations using Framer Motion, increasing user
+              engagement by <strong>10%</strong>.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="exp-card"
+          style="border-top-color: rgba(221, 254, 82, 0.48)"
+        >
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">B.Tech — Computer Science</div>
+              <div class="exp-company">
+                Government Engineering College · Ajmer, Rajasthan
+              </div>
+            </div>
+            <div class="exp-period">Aug 2019 — Jun 2023</div>
+          </div>
+          <ul class="exp-points">
+            <li>
+              Graduated with a CGPA of <strong>8.25 / 10</strong> in Computer
+              Science & Engineering.
+            </li>
+            <li>
+              Built a strong foundation in Data Structures & Algorithms, OOP,
+              and Database Systems.
+            </li>
+            <li>
+              Solved 150+ DSA problems on LeetCode, sharpening analytical and
+              problem-solving skills.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" style="padding-top: 10rem">
+      <div class="section-label">Work</div>
+      <div class="section-title">PROJECTS</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-number">01</div>
+            <div class="project-visual-inner">AUTH</div>
+            <div class="project-mockup">
+              <div class="mockup-circle"></div>
+              <div class="mockup-bar"></div>
+              <div class="mockup-bar short"></div>
+              <div class="mockup-bar medium"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Authentication System</div>
+            <div class="project-title">MULTI-PROJECT AUTH FLOW</div>
+            <p class="project-desc">
+              Complete login & signup system with third-party OAuth, JWT
+              handling, and robust client-side validation with smooth UX
+              transitions.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span><span>TypeScript</span><span>JWT</span
+              ><span>Redux</span><span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a
+              ><a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-number">02</div>
+            <div class="project-visual-inner">PORTAL</div>
+            <div class="project-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-bar short"></div>
+              <div class="mockup-bar"></div>
+              <div class="mockup-bar medium"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Web Application</div>
+            <div class="project-title">SCALABLE MULTI-USER PORTAL</div>
+            <p class="project-desc">
+              Feature-rich portal with dynamic feeds, multi-level filtering,
+              server-side pagination, and real-time data via WebSockets.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span><span>MobX</span><span>WebSocket</span
+              ><span>Tailwind CSS</span><span>Webpack</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a
+              ><a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-number">03</div>
+            <div class="project-visual-inner">APP</div>
+            <div class="project-mockup">
+              <div class="mockup-circle"></div>
+              <div class="mockup-bar"></div>
+              <div class="mockup-bar short"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Mobile Application</div>
+            <div class="project-title">REACT NATIVE MOBILE APP</div>
+            <p class="project-desc">
+              Cross-platform mobile app with shopping cart, user profiles, and
+              smooth navigation — consistent native UX on iOS and Android.
+            </p>
+            <div class="project-tech">
+              <span>React Native</span><span>Redux Toolkit</span
+              ><span>REST API</span><span>TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Case Study →</a
+              ><a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div id="contact-section">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <div class="section-label">Get In Touch</div>
+          <div class="section-title" style="margin-bottom: 1.1rem">
+            LET'S<br />CONNECT
+          </div>
+          <p>
+            Open to remote frontend roles, freelance projects, and exciting
+            collaborations. Drop me a message and I'll get back to you shortly.
+          </p>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </div>
+            <a href="mailto:archana.kumari.se@gmail.com"
+              >archana.kumari.se@gmail.com</a
+            >
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/archanakumari12/"
+              target="_blank"
+              class="social-link"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/chaudharyarchana"
+              target="_blank"
+              class="social-link"
+              >GitHub</a
+            >
+            <a
+              href="https://leetcode.com/u/user8759vN/"
+              target="_blank"
+              class="social-link"
+              >LeetCode</a
+            >
+          </div>
+        </div>
+        <div>
+          <form
+            class="contact-form"
+            id="contactForm"
+            onsubmit="handleSubmit(event)"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label
+                ><input type="text" id="fname" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label
+                ><input type="text" id="lname" placeholder="Smith" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label
+              ><input
+                type="email"
+                id="email"
+                placeholder="jane@company.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label
+              ><input
+                type="text"
+                id="subject"
+                placeholder="Job Opportunity / Freelance / Collaboration"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label
+              ><textarea
+                id="message"
+                rows="5"
+                placeholder="Tell me about the role or project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message →</button>
+            <div class="form-success" id="formSuccess">
+              ✓ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="contact-bg-text">HELLO</div>
+    </div>
+
+    <footer>
+      <span>© 2025 Archana Kumari. All rights reserved.</span>
+      <span>Frontend Developer · React · React Native · Next.js</span>
+    </footer>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* CURSOR */
+      const cur = document.getElementById("cursor");
+      const cf = document.getElementById("cf");
+      let mx = 0,
+        my = 0,
+        fx = 0,
+        fy = 0;
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        cur.style.left = mx + "px";
+        cur.style.top = my + "px";
+      });
+      (function loop() {
+        fx += (mx - fx) * 0.1;
+        fy += (my - fy) * 0.1;
+        cf.style.left = fx + "px";
+        cf.style.top = fy + "px";
+        requestAnimationFrame(loop);
+      })();
+      document
+        .querySelectorAll("a,button,.skill-tag,.stat-box,input,textarea")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", () => {
+            cur.classList.add("hov");
+            cf.classList.add("hov");
+          });
+          el.addEventListener("mouseleave", () => {
+            cur.classList.remove("hov");
+            cf.classList.remove("hov");
+          });
+        });
+
+      /* HERO */
+      gsap.fromTo(
+        "#heroTag",
+        { opacity: 0, y: 22 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 0.3, ease: "power3.out" },
+      );
+      gsap.fromTo(
+        "#heroName",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power3.out" },
+      );
+      gsap.fromTo(
+        "#heroSub",
+        { opacity: 0, y: 22 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 0.9, ease: "power3.out" },
+      );
+      gsap.fromTo(
+        "#heroCta",
+        { opacity: 0, y: 22 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 1.1, ease: "power3.out" },
+      );
+      gsap.fromTo(
+        "#heroPhoto",
+        { opacity: 0, x: 40, scale: 0.96 },
+        {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          duration: 1.1,
+          delay: 0.6,
+          ease: "power3.out",
+        },
+      );
+
+      /* PARALLAX SCROLL */
+      window.addEventListener("scroll", () => {
+        const s = window.scrollY;
+        document.getElementById("parallaxBg").style.transform =
+          `translateY(${s * 0.36}px)`;
+        document.getElementById("parallaxGrid").style.transform =
+          `translateY(${s * 0.17}px)`;
+        document.getElementById("orb1").style.transform =
+          `translateY(${s * 0.26}px)`;
+        document.getElementById("orb2").style.transform =
+          `translateY(${s * -0.16}px)`;
+      });
+
+      /* MOUSE PARALLAX */
+      document.getElementById("hero").addEventListener("mousemove", (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 26,
+          y = (e.clientY / window.innerHeight - 0.5) * 16;
+        gsap.to("#parallaxGrid", {
+          x: x * 0.42,
+          y: y * 0.42,
+          duration: 1,
+          ease: "power2.out",
+        });
+        gsap.to("#orb1", {
+          x: x * 0.7,
+          y: y * 0.7,
+          duration: 1.2,
+          ease: "power2.out",
+        });
+        gsap.to("#orb2", {
+          x: -x * 0.52,
+          y: -y * 0.52,
+          duration: 1.5,
+          ease: "power2.out",
+        });
+      });
+
+      /* FADE UP */
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting)
+              setTimeout(() => e.target.classList.add("visible"), i * 90);
+          });
+        },
+        { threshold: 0.08 },
+      );
+      document.querySelectorAll(".fade-up").forEach((el) => obs.observe(el));
+
+      /* SECTION TITLES */
+      document.querySelectorAll(".section-title").forEach((t) => {
+        gsap.fromTo(
+          t,
+          { opacity: 0, x: -32 },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: { trigger: t, start: "top 90%" },
+          },
+        );
+      });
+
+      /* EXP CARDS */
+      gsap.utils.toArray(".exp-card").forEach((card) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 65, scale: 0.96 },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.85,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 87%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+      });
+
+      /* PROJECT CARDS */
+      gsap.utils.toArray(".project-card").forEach((card) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 52 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 87%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+        gsap.to(card, {
+          scale: 0.97,
+          scrollTrigger: {
+            trigger: card,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      });
+
+      /* STAT COUNT-UP */
+      document.querySelectorAll(".stat-num").forEach((el) => {
+        const text = el.textContent,
+          num = parseFloat(text.replace(/[^0-9.]/g, "")),
+          suffix = text.replace(/[0-9.]/g, "");
+        ScrollTrigger.create({
+          trigger: el,
+          start: "top 85%",
+          once: true,
+          onEnter: () => {
+            gsap.fromTo(
+              { val: 0 },
+              { val: num },
+              {
+                duration: 1.5,
+                ease: "power2.out",
+                onUpdate: function () {
+                  el.textContent =
+                    (Number.isInteger(num)
+                      ? Math.round(this.targets()[0].val)
+                      : this.targets()[0].val.toFixed(2)) + suffix;
+                },
+              },
+            );
+          },
+        });
+      });
+
+      /* SKILL TAG STAGGER */
+      gsap.utils.toArray(".skill-category").forEach((cat) => {
+        gsap.fromTo(
+          cat.querySelectorAll(".skill-tag"),
+          { opacity: 0, y: 10 },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.045,
+            duration: 0.42,
+            ease: "power2.out",
+            scrollTrigger: { trigger: cat, start: "top 85%" },
+          },
+        );
+      });
+
+      /* CONTACT FORM */
+      function handleSubmit(e) {
+        e.preventDefault();
+        const btn = document.querySelector(".btn-submit");
+        btn.textContent = "Sending...";
+        btn.style.opacity = "0.6";
+        setTimeout(() => {
+          document.getElementById("contactForm").style.opacity = "0.3";
+          document.getElementById("contactForm").style.pointerEvents = "none";
+          document.getElementById("formSuccess").style.display = "block";
+          btn.textContent = "Sent ✓";
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
